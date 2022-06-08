@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{EBA457FB-B1C6-4A62-9A2A-FC11D88676D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{AFF16E23-30CD-4EE1-B3EA-0A481FD99ABA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metrics", "Metrics", "{6BB8E6CE-F4F1-43B0-B7CF-A2A407351EC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tracing", "Tracing", "{748C8084-9633-4F2C-84D9-E1C8FFB6FB39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middlewares", "Middlewares", "{DFCC7D97-1FED-4343-9216-7D76FB966810}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_shared", "_shared", "{98B36921-12BB-4CAA-BD8E-51714F624E23}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.editorconfig = ..\..\.editorconfig
+		..\..\.gitignore = ..\..\.gitignore
+		..\..\README.md = ..\..\README.md
+		..\..\Ruleset.ruleset = ..\..\Ruleset.ruleset
+		..\..\sharedproject.props = ..\..\sharedproject.props
+		..\..\stylecop.json = ..\..\stylecop.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iris.Common", "Common\src\Iris.Common\Iris.Common.csproj", "{166B95A4-F454-489E-8F64-91DF5C9B81C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Logging", "Logging\src\Iris.Logging\Iris.Logging.csproj", "{90B98F0B-C358-41B7-ADC7-2290C8D0A34E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Metrics", "Metrics\src\Iris.Metrics\Iris.Metrics.csproj", "{A1A859CD-0815-4625-9024-E670C0453FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Middlewares", "Middlewares\src\Iris.Middlewares\Iris.Middlewares.csproj", "{C3EDE2DC-94A5-4CCC-93A6-BE43FED7499C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Tracing", "Tracing\src\Iris.Tracing\Iris.Tracing.csproj", "{64952F21-5BE0-412E-A9B1-0EEF1209FF9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{166B95A4-F454-489E-8F64-91DF5C9B81C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166B95A4-F454-489E-8F64-91DF5C9B81C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166B95A4-F454-489E-8F64-91DF5C9B81C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166B95A4-F454-489E-8F64-91DF5C9B81C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B98F0B-C358-41B7-ADC7-2290C8D0A34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B98F0B-C358-41B7-ADC7-2290C8D0A34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B98F0B-C358-41B7-ADC7-2290C8D0A34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B98F0B-C358-41B7-ADC7-2290C8D0A34E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A859CD-0815-4625-9024-E670C0453FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A859CD-0815-4625-9024-E670C0453FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A859CD-0815-4625-9024-E670C0453FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A859CD-0815-4625-9024-E670C0453FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EDE2DC-94A5-4CCC-93A6-BE43FED7499C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EDE2DC-94A5-4CCC-93A6-BE43FED7499C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EDE2DC-94A5-4CCC-93A6-BE43FED7499C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EDE2DC-94A5-4CCC-93A6-BE43FED7499C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64952F21-5BE0-412E-A9B1-0EEF1209FF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64952F21-5BE0-412E-A9B1-0EEF1209FF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64952F21-5BE0-412E-A9B1-0EEF1209FF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64952F21-5BE0-412E-A9B1-0EEF1209FF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{166B95A4-F454-489E-8F64-91DF5C9B81C3} = {EBA457FB-B1C6-4A62-9A2A-FC11D88676D6}
+		{90B98F0B-C358-41B7-ADC7-2290C8D0A34E} = {AFF16E23-30CD-4EE1-B3EA-0A481FD99ABA}
+		{A1A859CD-0815-4625-9024-E670C0453FEB} = {6BB8E6CE-F4F1-43B0-B7CF-A2A407351EC9}
+		{C3EDE2DC-94A5-4CCC-93A6-BE43FED7499C} = {DFCC7D97-1FED-4343-9216-7D76FB966810}
+		{64952F21-5BE0-412E-A9B1-0EEF1209FF9F} = {748C8084-9633-4F2C-84D9-E1C8FFB6FB39}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C07A2FA9-FA7D-454D-BC92-3F1B12893344}
+	EndGlobalSection
+EndGlobal
