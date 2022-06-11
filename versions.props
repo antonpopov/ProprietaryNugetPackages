@@ -1,0 +1,73 @@
+<Project>
+  <PropertyGroup Condition="'$(TF_BUILD)' != 'true'">
+    <VersionPrefix>0.0.1</VersionPrefix>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SystemIOAbstractionsVersion>16.1.7</SystemIOAbstractionsVersion>
+    <SystemJsonVersion>5.0.2</SystemJsonVersion>
+    <SystemTextEncodingVersion>6.0.0</SystemTextEncodingVersion>
+    <SystemComponentModelVersion>5.0.0</SystemComponentModelVersion>
+    <AspNetCoreVersion>2.2.0</AspNetCoreVersion>
+    <AspNetWebApiVersion>5.2.7</AspNetWebApiVersion>
+    <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
+    <MicrosoftCSharpVersion>4.7.0</MicrosoftCSharpVersion>
+    <MicrosoftExtensionsOptionsConfigurationExtensionsVersion>3.1.1</MicrosoftExtensionsOptionsConfigurationExtensionsVersion>
+    <ExtensionsVersion>5.0.0</ExtensionsVersion>
+    
+    <SonarAnalyzerVersion>8.35.0.42613</SonarAnalyzerVersion>
+    <PlatformAbstractionsVersion>1.1.0</PlatformAbstractionsVersion>
+    <StyleCopVersion>1.1.118</StyleCopVersion>
+    <SwashbuckleVersion>6.2.3</SwashbuckleVersion>
+    <MailKitVersion>3.0.0</MailKitVersion>
+    <StackExchangeRedisVersion>2.2.88</StackExchangeRedisVersion>
+    <Rijndael256Version>3.2.0</Rijndael256Version>
+    <SteeltoeVersion>3.1.3</SteeltoeVersion>
+    <RecyclableMemoryStreamVersion>1.3.2</RecyclableMemoryStreamVersion>
+    <ServiceModelVersion>4.9.0</ServiceModelVersion>
+    <HealthChecksVersion>3.1.0</HealthChecksVersion>
+    <CastleCoreVersion>4.4.1</CastleCoreVersion>
+    <CastleCoreAsyncInterceptorVersion>2.0.0</CastleCoreAsyncInterceptorVersion>
+    <AppMetricsVersion>4.3.0</AppMetricsVersion>
+    <ProblemDetailsVersion>6.4.0</ProblemDetailsVersion>
+    <MassTransitVersion>7.3.1</MassTransitVersion>
+    <AutofacVersion>6.3.0</AutofacVersion>
+    <AutofacExtrasDynamicProxyVersion>6.0.0</AutofacExtrasDynamicProxyVersion>
+    <RestClientRuntimeVersion>2.3.21</RestClientRuntimeVersion>
+    <DocumentFormatVersion>2.15.0</DocumentFormatVersion>
+    <Itext7Version>7.2.1</Itext7Version>
+    <Itext7PdfHtmlVersion>4.0.1</Itext7PdfHtmlVersion>
+    <NPOIVersion>2.5.5</NPOIVersion>
+    
+    <JaegerVersion>1.0.3</JaegerVersion>
+    <OpenTracingVersion>0.12.1</OpenTracingVersion>
+    <OpenTracingContribVersion>0.8.0</OpenTracingContribVersion>
+
+    <SerilogVersion>2.10.0</SerilogVersion>
+    <SerilogSinksFileVersion>5.0.0</SerilogSinksFileVersion>
+    <SerilogSinksAsyncVersion>1.5.0</SerilogSinksAsyncVersion>
+    <SerilogExtensionsLoggingVersion>3.1.0</SerilogExtensionsLoggingVersion>
+    <SerilogExtensionsHostingVersion>4.2.0</SerilogExtensionsHostingVersion>
+    <SerilogSettingsConfigurationVersion>3.1.0</SerilogSettingsConfigurationVersion>
+    <SerilogSinksConsoleVersion>4.0.1</SerilogSinksConsoleVersion>
+
+    <CoverletVersion>3.1.2</CoverletVersion>
+    <TestSdkVersion>17.2.0</TestSdkVersion>
+    <XunitVersion>2.4.1</XunitVersion>
+    <XunitAnalyzersVersion>0.10.0</XunitAnalyzersVersion>
+    <XunitStudioVersion>2.4.5</XunitStudioVersion>
+    <FluentAssertionsVersion>6.7.0</FluentAssertionsVersion>
+    <MoqVersion>4.18.1</MoqVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net5.0'">
+    <ExtensionsVersion>5.0.0</ExtensionsVersion>
+    <HealthChecksVersion>5.0.1</HealthChecksVersion>
+    <NpgsqlEFCoreVersion>5.0.1</NpgsqlEFCoreVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <ExtensionsVersion>6.0.0</ExtensionsVersion>
+    <HealthChecksVersion>6.0.2</HealthChecksVersion>
+    <NpgsqlEFCoreVersion>6.0.2</NpgsqlEFCoreVersion>
+  </PropertyGroup>
+</Project>
