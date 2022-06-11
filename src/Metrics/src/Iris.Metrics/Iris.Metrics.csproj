@@ -1,7 +1,26 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+    <RootNamespace>Iris.Metrics</RootNamespace>
+    <Description>Raw measurements, generally with the intent to produce continuous summaries of those measurements, efficiently and simultaneously.</Description>
   </PropertyGroup>
+
+  <Import Project="..\..\..\..\versions.props" />
+  <Import Project="..\..\..\..\sharedproject.props" />
+
+  <ItemGroup>
+    <PackageReference Include="App.Metrics.AspNetCore.All" Version="$(AppMetricsVersion)" />
+    <PackageReference Include="App.Metrics.AspNetCore.Endpoints" Version="$(AppMetricsVersion)" />
+    <PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="$(AppMetricsVersion)" />
+    <PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="$(AppMetricsVersion)" />
+    <PackageReference Include="App.Metrics.Prometheus" Version="$(AppMetricsVersion)" />
+    <PackageReference Include="Castle.Core" Version="$(CastleCoreVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(ExtensionsVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\src\Iris.Common\Iris.Common.csproj" />
+  </ItemGroup>
 
 </Project>
