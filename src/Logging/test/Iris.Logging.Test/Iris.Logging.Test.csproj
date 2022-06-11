@@ -6,9 +6,8 @@
 
   <Import Project="..\..\..\..\versions.props" />
   <Import Project="..\..\..\..\sharedtest.props" />
-
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Iris.Common\Iris.Common.csproj" />
+    <ProjectReference Include="..\..\src\Iris.Logging\Iris.Logging.csproj" />
   </ItemGroup>
 
 </Project>
