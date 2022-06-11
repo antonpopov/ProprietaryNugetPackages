@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp5.0;net6.0;</TargetFrameworks>
+  </PropertyGroup>
+
+  <Import Project="..\..\..\..\versions.props" />
+  <Import Project="..\..\..\..\sharedtest.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Iris.Middlewares\Iris.Middlewares.csproj" />
+  </ItemGroup>
+
+</Project>

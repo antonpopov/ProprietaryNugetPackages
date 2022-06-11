@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iris.Logging.Test", "Loggin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iris.Metrics.Test", "Metrics\test\Iris.Metrics.Test\Iris.Metrics.Test.csproj", "{69E36BD3-C8D8-4E82-8568-3A1D7EF789A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Middlewares.Test", "Middlewares\test\Iris.Middlewares.Test\Iris.Middlewares.Test.csproj", "{9251D228-53E8-41C0-8865-17317AA19ADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{69E36BD3-C8D8-4E82-8568-3A1D7EF789A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E36BD3-C8D8-4E82-8568-3A1D7EF789A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E36BD3-C8D8-4E82-8568-3A1D7EF789A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9251D228-53E8-41C0-8865-17317AA19ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9251D228-53E8-41C0-8865-17317AA19ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9251D228-53E8-41C0-8865-17317AA19ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9251D228-53E8-41C0-8865-17317AA19ADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{1536817A-4833-4C01-9077-E7FDE79E2F11} = {EBA457FB-B1C6-4A62-9A2A-FC11D88676D6}
 		{7F42D840-53A4-4C65-AE8D-A4698270900A} = {AFF16E23-30CD-4EE1-B3EA-0A481FD99ABA}
 		{69E36BD3-C8D8-4E82-8568-3A1D7EF789A8} = {6BB8E6CE-F4F1-43B0-B7CF-A2A407351EC9}
+		{9251D228-53E8-41C0-8865-17317AA19ADC} = {DFCC7D97-1FED-4343-9216-7D76FB966810}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C07A2FA9-FA7D-454D-BC92-3F1B12893344}

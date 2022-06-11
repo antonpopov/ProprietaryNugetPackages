@@ -2,6 +2,22 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0;</TargetFrameworks>
+    <RootNamespace>Net.Middlewares</RootNamespace>
+    <Description>Middlewares shared among web services.</Description>
   </PropertyGroup>
+
+  <Import Project="..\..\..\..\versions.props" />
+  <Import Project="..\..\..\..\sharedproject.props" />
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="$(SystemJsonVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="$(ExtensionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="$(ExtensionsVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\src\Iris.Common\Iris.Common.csproj" />
+  </ItemGroup>
 
 </Project>
