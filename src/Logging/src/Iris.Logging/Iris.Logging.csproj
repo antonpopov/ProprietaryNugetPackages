@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Iris.Logging</RootNamespace>
+    <Description>Logging providers</Description>
   </PropertyGroup>
+
+  <Import Project="..\..\..\..\versions.props" />
+  <Import Project="..\..\..\..\sharedproject.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="$(ExtensionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(MicrosoftExtensionsOptionsConfigurationExtensionsVersion)" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="$(RecyclableMemoryStreamVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+    <PackageReference Include="Serilog" Version="$(SerilogVersion)" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="$(SerilogExtensionsLoggingVersion)" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="$(SerilogSinksAsyncVersion)" />
+    <PackageReference Include="Serilog.Sinks.File" Version="$(SerilogSinksFileVersion)" />
+  </ItemGroup>
 
 </Project>

@@ -6,4 +6,11 @@
     <Description>The package contains common used infrastructure classes and interfaces.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+    <PackageReference Include="System.IO.Abstractions" Version="$(SystemIOAbstractionsVersion)" />
+    <PackageReference Include="System.Text.Json" Version="$(SystemJsonVersion)" />
+  </ItemGroup>
+
 </Project>

@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_shared", "_shared", "{2438
 		..\versions.props = ..\versions.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.Common.Test", "Common\test\Iris.Common.Test\Iris.Common.Test.csproj", "{1536817A-4833-4C01-9077-E7FDE79E2F11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iris.Common.Test", "Common\test\Iris.Common.Test\Iris.Common.Test.csproj", "{1536817A-4833-4C01-9077-E7FDE79E2F11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
