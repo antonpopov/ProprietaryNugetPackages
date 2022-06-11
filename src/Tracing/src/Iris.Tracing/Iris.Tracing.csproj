@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0;</TargetFrameworks>
+    <RootNamespace>Iris.Tracing</RootNamespace>
+    <Description>The package contains tracing extensions.</Description>
   </PropertyGroup>
+
+  <Import Project="..\..\..\..\versions.props" />
+  <Import Project="..\..\..\..\sharedproject.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Jaeger" Version="$(JaegerVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="$(OpenTracingContribVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\src\Iris.Common\Iris.Common.csproj" />
+  </ItemGroup>
 
 </Project>
