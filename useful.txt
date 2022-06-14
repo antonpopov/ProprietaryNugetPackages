@@ -1,0 +1,18 @@
+Versioning:
+
+1. dotnet tool install -g nbgv
+
+2. nbgv install
+
+3. nbgv get-version -v SemVer2
+
+
+Build and deploy steps:
+
+1. dotnet restore src\ProprietaryNugetPackagesDemo.sln\
+
+2. dotnet build src\ProprietaryNugetPackagesDemo.sln -c Release --no-restore
+
+3. dotnet pack src\ProprietaryNugetPackagesDemo.sln -c Release --no-restore --no-build -o build\nupkgs
+
+4. dotnet nuget push build\nupkgs\*.nupkg --skip-duplicate -k ${apiKeySecret} -s http://your-private-nuget-feed
