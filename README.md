@@ -6,4 +6,5 @@ Additional resources:
 
   * [Symbols and Symbol Packages, Explained](https://blog.inedo.com/nuget/symbols-and-symbolpackages)
   * [Version vs VersionSuffix vs PackageVersion](https://andrewlock.net/version-vs-versionsuffix-vs-packageversion-what-do-they-all-mean/)
+  * [Nerdbank.GitVersioning](https://github.com/dotnet/Nerdbank.GitVersioning)
   * [Central Package Management](https://devblogs.microsoft.com/nuget/introducing-central-package-management/)
